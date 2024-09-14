@@ -3,6 +3,13 @@
 ## Overview
 This app allows users to filter vehicles by make and year.
 
+## Features
+
+1. Vehicle Make and Model Year Filtering: 
+    - users can select a vehicle make from a dropdown list and choose a model year between 2015 and the current year from another dropdown.
+2. Result Page:
+    - when a user selects a make and model year, the app navigates to a results page where the filtered vehicle models are displayed
+
 ## Installation
 1. Clone the repository:
     ```bash
