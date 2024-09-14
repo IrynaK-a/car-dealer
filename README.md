@@ -22,9 +22,21 @@ This app allows users to filter vehicles by make and year.
 3. Create a `.env.local` file with the contents from a `.env.example` file
 
 ## Running the App
-To start the development server:
+### Development Mode
+- start the development server:
 ```bash
 npm run dev
+```
+
+### Production Mode
+- build the application:
+```bash
+npm run build
+```
+
+- start the production server:
+```bash
+npm start
 ```
 
 ## App tree
