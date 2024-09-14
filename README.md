@@ -6,7 +6,7 @@ This app allows users to filter vehicles by make and year.
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo.git
+    git clone https://github.com/IrynaK-a/car-dealer.git
     ```
 2. Install dependencies:
     ```bash
@@ -21,6 +21,7 @@ npm run dev
 ```
 
 ## App tree
+```bash
 ├── src
 │   ├── app
 │   │   ├── error.tsx
@@ -65,3 +66,4 @@ npm run dev
 │       └── types
 │           ├── index.ts
 │           └── vehicleMakesInfo.type.ts
+```
