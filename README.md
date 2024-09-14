@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vehicle Filter App
 
-## Getting Started
+## Overview
+This app allows users to filter vehicles by make and year.
 
-First, run the development server:
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-repo.git
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Create a `.env.local` file with the contents from a `.env.example` file
 
+## Running the App
+To start the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## App tree
+├── src
+│   ├── app
+│   │   ├── error.tsx
+│   │   ├── fonts
+│   │   │   ├── GeistMonoVF.woff
+│   │   │   └── GeistVF.woff
+│   │   ├── globals.css
+│   │   ├── icon.svg
+│   │   ├── layout.tsx
+│   │   ├── not-found.tsx
+│   │   ├── page.tsx
+│   │   └── result
+│   │       └── [makeId]
+│   │           └── [year]
+│   │               ├── error.tsx
+│   │               └── page.tsx
+│   ├── components
+│   │   ├── ErrorPage
+│   │   │   ├── ErrorPage.module.scss
+│   │   │   ├── ErrorPage.tsx
+│   │   │   └── index.tsx
+│   │   ├── Filters
+│   │   │   ├── Filters.tsx
+│   │   │   └── index.tsx
+│   │   └── index.ts
+│   ├── libs
+│   │   └── utils
+│   │       ├── createOptions.ts
+│   │       ├── getSelectedMakeId.ts
+│   │       ├── getVehicleMakesInfo.ts
+│   │       ├── getYearsFrom2015ToCurrent.ts
+│   │       ├── index.ts
+│   │       └── sortItems.ts
+│   └── shared
+│       ├── interfaces
+│       │   ├── index.ts
+│       │   ├── selectOption.interface.ts
+│       │   ├── vehicleModelInfo.interface.ts
+│       │   ├── vehicleModel.interface.ts
+│       │   ├── vehicleTypeInfo.interface.ts
+│       │   └── vehicleTypeInfoResult.interface.ts
+│       └── types
+│           ├── index.ts
+│           └── vehicleMakesInfo.type.ts
